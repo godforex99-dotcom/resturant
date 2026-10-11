@@ -1,0 +1,473 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Enjoy delicious pizza, hot dogs, rice and turkey at Godwin Food Home. Order your favourite meals today.">
+
+    <meta name="theme-color" content="#fffaf3">
+
+    <title>Godwin Food Home | Delicious Meals</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header" id="home">
+
+        <a href="#home" class="logo">
+            Godwin <span>Food Home.</span>
+        </a>
+
+        <button
+            class="menu-toggle"
+            id="menu-toggle"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="nav">
+            ☰
+        </button>
+
+        <!-- NAVIGATION -->
+        <nav class="nav" id="nav">
+            <a href="#home">Home</a>
+            <a href="#products">Our Menu</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <!-- CART AT THE TOP -->
+        <button>
+            
+<a href="cart.html" class="header-order cart-toggle">
+    🛒 Cart (<span id="cart-count">0</span>)
+</a>
+
+        </button>
+
+        <a href="#contact" class="header-order order-link">
+            Order Now ↗
+        </a>
+
+    </header>
+
+    <!-- CART PANEL -->
+    <section
+        class="cart-panel"
+        id="cart-panel"
+        aria-label="Shopping cart"
+        hidden>
+
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+
+            <button
+                type="button"
+                id="cart-close"
+                aria-label="Close shopping cart">
+                ✕
+            </button>
+        </div>
+
+        <div id="cart-items" aria-live="polite">
+            <p>Your cart is empty.</p>
+        </div>
+
+        <div class="cart-summary">
+            <h3>
+                Total:
+                <span id="cart-total">₦0</span>
+            </h3>
+
+            <button
+                type="button"
+                id="clear-cart">
+                Clear Cart
+            </button>
+
+            <button
+                type="button"
+                id="checkout-button"
+                class="btn">
+                Order on WhatsApp
+            </button>
+        </div>
+
+    </section>
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero" id="hero">
+
+            <div class="hero-content">
+
+                <p class="tagline">
+                    WELCOME TO GODWIN FOOD HOME
+                </p>
+
+                <h1>
+                    Good Food.<br>
+                    <span>Great Taste.</span><br>
+                    Happy Moments.
+                </h1>
+
+                <p class="hero-text">
+                    Every bite tells a delicious story.
+                    Enjoy freshly prepared pizza, tasty hot dogs,
+                    satisfying rice and delicious turkey made
+                    to brighten your day.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#products" class="btn">
+                        Explore Our Menu →
+                    </a>
+
+                    <a href="#about" class="btn-secondary">
+                        Discover Our Story
+                    </a>
+
+                </div>
+
+                <div class="hero-note">
+                    <span class="star">★</span>
+                    Delicious meals. Wonderful moments.
+                </div>
+
+            </div>
+
+            <div class="hero-image">
+
+                <img
+                    src="backg.png"
+                    alt="Delicious food from Godwin Food Home">
+
+                <div class="image-label">
+                    <span class="label-icon">🍽️</span>
+
+                    <div>
+                        <strong>Made with Love</strong>
+                        <p>Good food, every time.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- MENU SECTION -->
+        <section class="products section" id="products">
+
+            <div class="section-title">
+                <p class="tagline">EXPLORE OUR MENU</p>
+
+                <h2>Something Delicious for Everyone</h2>
+
+                <p>
+                    Choose your favourite meal and add it
+                    to your cart.
+                </p>
+            </div>
+
+            <!-- PIZZA SECTION -->
+            <section class="food-section" id="pizza">
+
+                <div class="food-section-heading">
+                    <h3>🍕 Our Pizza</h3>
+                    <p>Fresh, tasty and made for your cravings.</p>
+                </div>
+
+                <div class="food-gallery">
+
+                    <article class="food-card">
+                        <img src="pitzaandcook.png"
+                             alt="Classic pizza"
+                             loading="lazy">
+
+                        <div class="food-info">
+                            <h4>Classic Pizza</h4>
+                            <p class="food-price">₦5,000</p>
+
+                            <button class="add-to-cart"
+                                type="button"
+                                data-name="Classic Pizza"
+                                data-price="5000">
+                                Add to Cart +
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="food-card">
+                        <img src="pitxz3.png"
+                             alt="Special pizza"
+                             loading="lazy">
+
+                        <div class="food-info">
+                            <h4>Special Pizza</h4>
+                            <p class="food-price">₦7,000</p>
+
+                            <button class="add-to-cart"
+                                type="button"
+                                data-name="Special Pizza"
+                                data-price="7000">
+                                Add to Cart +
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="food-card">
+                        <img src="pitza1.png"
+                             alt="Cheese pizza"
+                             loading="lazy">
+
+                        <div class="food-info">
+                            <h4>Cheese Pizza</h4>
+                            <p class="food-price">₦6,000</p>
+
+                            <button class="add-to-cart"
+                                type="button"
+                                data-name="Cheese Pizza"
+                                data-price="6000">
+                                Add to Cart +
+                            </button>
+                        </div>
+                    </article>
+
+                </div>
+
+            </section>
+
+            <!-- HOT DOG SECTION -->
+            <section class="food-section" id="hot-dogs">
+
+                <div class="food-section-heading">
+                    <h3>🌭 Our Hot Dogs</h3>
+                    <p>Delicious hot dogs for every appetite.</p>
+                </div>
+
+                <div class="food-gallery">
+
+                    <article class="food-card">
+                        <img src="hot dog.png"
+                             alt="Classic hot dog"
+                             loading="lazy">
+
+                        <div class="food-info">
+                            <h4>Classic Hot Dog</h4>
+                            <p class="food-price">₦2,000</p>
+
+                            <button class="add-to-cart"
+                                type="button"
+                                data-name="Classic Hot Dog"
+                                data-price="2000">
+                                Add to Cart +
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="food-card">
+                        <img src="hotdog2.png"
+                             alt="Loaded hot dog"
+                             loading="lazy">
+
+                        <div class="food-info">
+                            <h4>Loaded Hot Dog</h4>
+                            <p class="food-price">₦3,000</p>
+
+                            <button class="add-to-cart"
+                                type="button"
+                                data-name="Loaded Hot Dog"
+                                data-price="3000">
+                                Add to Cart +
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="food-card">
+                        <img src="hotdog3.png"
+                             alt="Special hot dog"
+                             loading="lazy">
+
+                        <div class="food-info">
+                            <h4>Special Hot Dog</h4>
+                            <p class="food-price">₦3,500</p>
+
+                            <button class="add-to-cart"
+                                type="button"
+                                data-name="Special Hot Dog"
+                                data-price="3500">
+                                Add to Cart +
+                            </button>
+                        </div>
+                    </article>
+
+                </div>
+
+            </section>
+
+            <!-- RICE AND TURKEY SECTION -->
+            <section class="food-section" id="rice-turkey">
+
+                <div class="food-section-heading">
+                    <h3>🍚 Rice & Turkey</h3>
+                    <p>Satisfying meals for a delicious day.</p>
+                </div>
+
+                <div class="food-gallery">
+
+                    <article class="food-card">
+                        <img src="turki1.png"
+                             alt="Rice and turkey"
+                             loading="lazy">
+
+                        <div class="food-info">
+                            <h4>Rice & Turkey</h4>
+                            <p class="food-price">₦4,500</p>
+
+                            <button class="add-to-cart"
+                                type="button"
+                                data-name="Rice & Turkey"
+                                data-price="4500">
+                                Add to Cart +
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="food-card">
+                        <img src="turki2.png"
+                             alt="Special turkey meal"
+                             loading="lazy">
+
+                        <div class="food-info">
+                            <h4>Special Turkey Meal</h4>
+                            <p class="food-price">₦5,500</p>
+
+                            <button class="add-to-cart"
+                                type="button"
+                                data-name="Special Turkey Meal"
+                                data-price="5500">
+                                Add to Cart +
+                            </button>
+                        </div>
+                    </article>
+
+                </div>
+
+            </section>
+
+            <!-- EBA SECTION -->
+            <section class="food-section" id="eba">
+
+                <div class="food-section-heading">
+                    <h3>🥣 Eba & Swallow</h3>
+                    <p>
+                        Traditional Nigerian meals coming soon.
+                        Contact us to ask about availability.
+                    </p>
+                </div>
+
+            </section>
+
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section class="about section" id="about">
+
+            <div class="about-content">
+
+                <p class="tagline">ABOUT OUR RESTAURANT</p>
+
+                <h2>Good Food Brings People Together.</h2>
+
+                <p>
+                    At Godwin Food Home, we believe that great food
+                    makes every moment better. Our menu brings
+                    together delicious favourites for different
+                    tastes and occasions.
+                </p>
+
+                <p>
+                    From pizza and hot dogs to rice and turkey,
+                    we're here to make your next meal enjoyable.
+                </p>
+
+                <a href="#products" class="btn">
+                    Discover Our Menu →
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="contact section" id="contact">
+
+            <div class="section-title">
+                <p class="tagline">WE'D LOVE TO HEAR FROM YOU</p>
+
+                <h2>Ready to Enjoy Something Delicious?</h2>
+
+                <p>
+                    Contact us to ask about our menu, prices
+                    and available meals.
+                </p>
+            </div>
+
+            <div class="contact-card">
+
+                <h3>Godwin Food Home</h3>
+
+                <p class="phone">
+                    Phone:
+                    <a href="tel:+2349126178626">
+                        09126178626
+                    </a>
+                </p>
+
+                <p>
+                    Have a craving? Let's help you find your
+                    next favourite meal.
+                </p>
+
+                <a
+                    href="https://wa.me/2349126178626?text=Hello%20Godwin%20Food%20Home%2C%20I%20would%20like%20to%20make%20an%20order."
+                    class="btn whatsapp-btn"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    Contact Us on WhatsApp ↗
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <a href="#home" class="footer-logo">
+            Godwin Food Home
+        </a>
+
+        <p>Good Food. Great Taste. Happy Moments.</p>
+
+        <p class="copyright">
+            &copy; <span id="year"></span>
+            Godwin Food Home. All rights reserved.
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
